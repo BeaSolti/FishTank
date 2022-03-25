@@ -2,18 +2,16 @@ package com.fishtank;
 
 import java.util.ArrayList;
 
-public class Main{
-    public static void main(String args[]){
-        ArrayList<Fish> Fishes = new ArrayList<Fish>();
-        //constructor is created under Fish class
-        Fish clownfish = new Fish("Dory","Clownfish", 15, "blue and yellow",false);
-        Fishes.add(clownfish);
-        Fish tag = new Fish("Nemo","Tag",20, "grey",true);
-        Fishes.add(tag);
-        Fish kong = new Fish("Gill","Kong",25, "grey",true);
-        Fishes.add(kong);
-    }
-for (Fish ) {
-        System.out.println("Name: " + Fish.name + "; type: " + Fish.type + "; weight: " + Fish.weight + " gramms" + "; color: " + Fish.color + "; short-term memory loss: " + Fish.memoryloss);
+public class Main {
+    public static void main(String args[]) {
+        ArrayList<Fish> arrlistFishes = new ArrayList<>();
+        arrlistFishes.add(new Fish("Dory", "Clownfish", 15, "blue and yellow", false));
+        arrlistFishes.add(new Fish("Nemo", "Tag", 20, "grey", true));
+        arrlistFishes.add(new Fish("Gill", "Kong", 25, "grey", true));
+
+        for (Fish fish: arrlistFishes) {
+            System.out.println("Fish name: "+fish.name+"; type: " +fish.type+ "; weight: " +fish.weight+" gramms" +"; color: "+fish.color+"; short-term memory loss: "+fish.memoryloss);
+        }
     }
 }
+
