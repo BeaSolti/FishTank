@@ -1,25 +1,19 @@
 package com.fishtank;
 
 public class Fish {
-    // Fish is a class of which I created an object and pass it to an ArrayList
-    private static String name;
-    private String type;
-    private int weight;
-    private String color;
-    private boolean memoryloss;
+    // Fish is a class of which has been created an object to pass it to an ArrayList
+    String name;
+    String type;
+    int weight;
+    String color;
+    boolean memoryloss;
 
-    public Fish(String name, String type, int i, String color, boolean b) {
-
-    }
-    public void addFish (String name, String type, int weight, String color, boolean memoryloss){
+    public Fish(String name, String type, int i, String color, boolean short_term_memory_loss) {
         this.name = name;
         this.type = type;
-        this.weight = weight;
+        this.weight = i;
         this.color = color;
-        this.memoryloss= memoryloss;
-    }
-    public void printFish(){
-        System.out.println(("Name: " + this.name + "; type: " + this.type + "; weight: " + this.weight + " gramms" + "; color: " + this.color + "; short-term memory loss: " + this.memoryloss));
+        this.memoryloss = memoryloss;
     }
 }
 
