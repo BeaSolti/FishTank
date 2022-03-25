@@ -13,5 +13,7 @@ public class Main{
         Fish kong = new Fish("Gill","Kong",25, "grey",true);
         Fishes.add(kong);
     }
-
+for (Fish ) {
+        System.out.println("Name: " + Fish.name + "; type: " + Fish.type + "; weight: " + Fish.weight + " gramms" + "; color: " + Fish.color + "; short-term memory loss: " + Fish.memoryloss);
+    }
 }
