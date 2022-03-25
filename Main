@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String args[]) {
         ArrayList<Fish> arrlistFishes = new ArrayList<>();
-        arrlistFishes.add(new Fish("Dory", "Clownfish", 15, "blue and yellow", false));
-        arrlistFishes.add(new Fish("Nemo", "Tag", 20, "grey", true));
-        arrlistFishes.add(new Fish("Gill", "Kong", 25, "grey", true));
+        arrlistFishes.add(new Fish("Nemo", "Clownfish", 15, "blue and yellow", false));
+        arrlistFishes.add(new Fish("Dory", "Tag", 20, "blue", true));
+        arrlistFishes.add(new Fish("Gill", "Kong", 25, "grey", false));
 
         for (Fish fish: arrlistFishes) {
             System.out.println("Fish name: "+fish.name+"; type: " +fish.type+ "; weight: " +fish.weight+" gramms" +"; color: "+fish.color+"; short-term memory loss: "+fish.memoryloss);
