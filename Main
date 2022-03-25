@@ -1,22 +1,17 @@
 package com.fishtank;
 
-public class Main {
+import java.util.ArrayList;
 
-    public static void main(String[] args) {
-        //to create the three types of fish, with different attributes, that are numbers (weight), characters (name and type), and boolean (short-term memory loss: true/false)
-        Fish clownfish = new Fish ("Dory","Clownfish", 250, "blue",false);
-        clownfish.speak();
-        Fish tag = new Fish ("Nemo","Tag",150, "grey",true);
-        tag.speak();
-        Fish kong = new Fish ("King","Kong",200,"orange",false);
-        kong.speak();
-
-        int x = clownfish.getWeight();
-        System.out.println(x);
-		
-		//addFish()
-		//feed() 
-		//removeFish()
-		//getStatus() 
+public class Main{
+    public static void main(String args[]){
+        ArrayList<Fish> Fishes = new ArrayList<Fish>();
+        //constructor is created under Fish class
+        Fish clownfish = new Fish("Dory","Clownfish", 15, "blue and yellow",false);
+        Fishes.add(clownfish);
+        Fish tag = new Fish("Nemo","Tag",20, "grey",true);
+        Fishes.add(tag);
+        Fish kong = new Fish("Gill","Kong",25, "grey",true);
+        Fishes.add(kong);
     }
+
 }
